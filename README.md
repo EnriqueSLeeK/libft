@@ -2,5 +2,10 @@
 
 First project from 42 school
 
-Objective:
-Implement a library using ar
+## Skills:
+- Imperative programming
+- Rigor
+- Algorithms & AI
+
+## Objective:
+- Unix logic 
