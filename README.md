@@ -2,7 +2,7 @@
 
 First project from 42 school
 
-This project aims to the a reimplementation of some functions from the standart C library
+This project aims to the a reimplementation of some functions from the standard C library
 
 ## Skills:
 - Imperative programming
