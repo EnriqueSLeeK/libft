@@ -27,6 +27,7 @@ To use the library generated
 1. Include the header to your C file
 
 2. Compile your code with the library
+
 Example:
 ```
 clang main.c libft.a
