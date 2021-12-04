@@ -16,7 +16,7 @@ This project aims to the a reimplementation of some functions from the standard 
 To see what function are implemnted, you can check the "specification.pdf"
 
 ### Additional functionility:
-get\_next\_line: readline() functionality
+* get\_next\_line: readline() functionality
 
 ## Compiling
 For the mandatory part
