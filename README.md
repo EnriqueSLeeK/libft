@@ -12,6 +12,9 @@ This project aims to the a reimplementation of some functions from the standard 
 ## Objective:
 - Unix logic 
 
+## Functionality
+To see what function are implemnted, you can check the "specification.pdf"
+
 ## Compiling
 For the mandatory part
 ```
