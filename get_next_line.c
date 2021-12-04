@@ -6,7 +6,7 @@
 /*   By: ensebast <ensebast@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 16:58:01 by ensebast          #+#    #+#             */
-/*   Updated: 2021/08/24 02:34:50 by ensebast         ###   ########.br       */
+/*   Updated: 2021/11/17 17:20:29 by ensebast         ###   ########.br       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ char	*get_next_line(int fd)
 	char			*result;
 	int				quant;
 	char			*res;
-	static t_list	*head;
+	static t_link	*head;
 
 	if (BUFFER_SIZE < 1 || fd < 0)
 		return (0);
 	head = read_and_add(malloc(BUFFER_SIZE + 1), head, fd);
-	if (head == 0 )
+	if (head == 0)
 		return (0);
 	quant = line_size(head, fd);
 	result = malloc(quant + 1);
@@ -35,7 +35,7 @@ char	*get_next_line(int fd)
 	return (res);
 }
 
-int	get_and_free(t_list **node, t_list *prev, char *line, int *k)
+int	get_and_free(t_link **node, t_link *prev, char *line, int *k)
 {
 	line[*k] = (*node)-> buff_c;
 	*k += 1;
@@ -45,7 +45,7 @@ int	get_and_free(t_list **node, t_list *prev, char *line, int *k)
 	return (0);
 }
 
-void	adjust_pointer(t_list **prev, t_list **node, t_list **true_head)
+void	adjust_pointer(t_link **prev, t_link **node, t_link **true_head)
 {
 	*prev = *node;
 	*node = (*node)-> next;
@@ -58,11 +58,11 @@ void	adjust_pointer(t_list **prev, t_list **node, t_list **true_head)
  * up the memory
 */
 
-char	*copy_and_free(char *line, t_list *node, t_list **head, int fd)
+char	*copy_and_free(char *line, t_link *node, t_link **head, int fd)
 {
 	int		k;
-	t_list	*prev;
-	t_list	*true_head;
+	t_link	*prev;
+	t_link	*true_head;
 
 	k = 0;
 	prev = 0;
@@ -87,10 +87,10 @@ char	*copy_and_free(char *line, t_list *node, t_list **head, int fd)
 	return (line);
 }
 
-t_list	*free_all(t_list *node, int fd)
+t_link	*free_all(t_link *node, int fd)
 {
-	t_list	*prev;
-	t_list	*head;
+	t_link	*prev;
+	t_link	*head;
 
 	prev = 0;
 	head = 0;

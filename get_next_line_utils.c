@@ -6,16 +6,16 @@
 /*   By: ensebast <ensebast@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 17:18:29 by ensebast          #+#    #+#             */
-/*   Updated: 2021/08/24 02:35:24 by ensebast         ###   ########.br       */
+/*   Updated: 2021/11/11 19:27:00 by ensebast         ###   ########.br       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-t_list	*copy(t_list *node, int fd, char *buff_t, int flag_code[])
+t_link	*copy(t_link *node, int fd, char *buff_t, int flag_code[])
 {
-	t_list	*root;
-	t_list	*tmp;
+	t_link	*root;
+	t_link	*tmp;
 
 	root = node;
 	while (node -> next)
@@ -43,7 +43,7 @@ t_list	*copy(t_list *node, int fd, char *buff_t, int flag_code[])
  * flag_code [1] = read_code
  * flag_code [2] = index
  */
-t_list	*read_and_add(char *tmp, t_list *node, int fd)
+t_link	*read_and_add(char *tmp, t_link *node, int fd)
 {
 	int		flag_code[3];
 
@@ -72,11 +72,11 @@ t_list	*read_and_add(char *tmp, t_list *node, int fd)
 }
 
 //Create nodes
-t_list	*create_node(char c, int fd)
+t_link	*create_node(char c, int fd)
 {
-	t_list		*node;
+	t_link		*node;
 
-	node = malloc(sizeof(t_list));
+	node = malloc(sizeof(t_link));
 	if (node == 0)
 		return (0);
 	node -> buff_c = c;
@@ -85,9 +85,9 @@ t_list	*create_node(char c, int fd)
 	return (node);
 }
 
-t_list	*free_node(t_list *prev, t_list *node)
+t_link	*free_node(t_link *prev, t_link *node)
 {
-	t_list	*tmp;
+	t_link	*tmp;
 
 	tmp = node;
 	if (!(prev))
@@ -111,7 +111,7 @@ t_list	*free_node(t_list *prev, t_list *node)
 	return (0);
 }
 
-int	line_size(t_list *head, int fd)
+int	line_size(t_link *head, int fd)
 {
 	int	i;
 

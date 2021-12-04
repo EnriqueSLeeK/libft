@@ -6,7 +6,7 @@
 /*   By: ensebast <ensebast@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 12:55:42 by ensebast          #+#    #+#             */
-/*   Updated: 2021/11/09 20:47:43 by ensebast         ###   ########.br       */
+/*   Updated: 2021/11/11 15:51:00 by ensebast         ###   ########.br       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include "get_next_line.h"
-# include "get_next_line_bonus.h"
 
 typedef struct s_list
 {
