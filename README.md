@@ -1,5 +1,4 @@
-# libft &middot; ![norminette](https://github.com/EnriqueSLeeK/libft/workflows/main/badge.svg)
-
+# libft &middot; [![.github/workflows/norminette.yml](https://github.com/EnriqueSLeeK/libft/actions/workflows/norminette.yml/badge.svg)](https://github.com/EnriqueSLeeK/libft/actions/workflows/norminette.yml)
 First project from 42 school
 
 This project aims to the a reimplementation of some functions from the standard C library and some extra ones too
