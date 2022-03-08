@@ -1,6 +1,6 @@
 # libft
 
-![norminette](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME_OR_FILE>/badge.svg)
+![norminette](https://github.com/EnriqueSLeeK/libft/workflows/norminette/badge.svg)
 
 First project from 42 school
 
