@@ -1,6 +1,4 @@
-# libft
-
-![norminette](https://github.com/EnriqueSLeeK/libft/workflows/norminette/badge.svg)
+# libft &middot; ![norminette](https://github.com/EnriqueSLeeK/libft/workflows/norminette/badge.svg)
 
 First project from 42 school
 
