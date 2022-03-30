@@ -12,9 +12,9 @@ This project aims to the a reimplementation of some functions from the standard 
 - Unix logic 
 
 ## Functionality
-To see what function are implemnted, you can check the "specification.pdf"
+This section will be documented
 
-### Additional functionility:
+### Additional functionality:
 * get\_next\_line: readline() functionality
 
 ## Compiling
